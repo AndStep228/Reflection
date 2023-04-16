@@ -1,0 +1,387 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+html,
+body {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #1A1A1A;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    box-sizing: content-box;
+    padding: 0 15px;
+    max-width: 1700px;
+    margin: 0px auto;
+}
+
+.title {
+    font-size: 42px;
+}
+
+.main {
+    flex: 1 1 auto;
+    padding: 150px 0 230px 0;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+}
+
+.header__block {
+    margin: 0 auto;
+    width: max-content;
+    text-align: center;
+    padding: 70px 0 0 0;
+}
+
+.logo {
+    width: 203px;
+    height: 203px;
+    margin: 0 0 20px 0;
+}
+
+.header__title {
+    font-size: 128px;
+    font-weight: medium;
+}
+
+.header__subtitle {
+    font-size: 36px;
+}
+
+.contacts {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 0 0;
+    width: 100%;
+    background: white;
+    height: 241px;
+    background: url(/img/Group1.svg) center no-repeat;
+}
+
+.contacts__block {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contacts__items {
+    display: flex;
+    width: 470px;
+    justify-content: space-between;
+}
+
+.contact {
+    width: 80px;
+    height: 80px;
+}
+
+.contacts__title {
+    color: black;
+}
+
+/*Main ----------------------------------------------------------------*/
+
+.about-us__block {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.about-us__item {
+    display: flex;
+}
+
+.about-us__item-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 20px 0 0;
+}
+
+.about-us__item-txt {
+    font-size: 96px;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.item-right {
+    width: 100%;
+}
+
+.about-us__item:not(:last-child) {
+    margin: 0 0 300px 0;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background: white;
+    margin: 0 0 50px 0;
+}
+
+.often-questions__block {
+    margin: 150px 0 0 0;
+}
+
+.often-questions {
+    position: relative;
+}
+
+.question__img {
+    position: absolute;
+    right: -100px;
+    top: -50px;
+    z-index: -1;
+}
+
+.questions__list {
+    margin: 100px 0 0 0;
+}
+
+.question__item-block {
+    max-width: 1026px;
+    height: max-content;
+}
+
+.question__item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    max-width: 1026px;
+    height: 100px;
+    background: linear-gradient(90deg, #FFFFFF 50%, rgba(26, 26, 26, 0.97) 100%);
+    border-radius: 30px 0px 0px 30px;
+}
+
+.question__item-request {
+    display: none;
+    background: linear-gradient(90deg, #FFFFFF 50%, rgba(26, 26, 26, 0.97) 100%);
+    border-radius: 30px 0px 0px 30px;
+    max-width: 1026px;
+    height: max-content;
+    padding: 40px 40px;
+    margin: 15px 0 0 0;
+}
+
+.request__txt {
+    font-size: 20px;
+    color: black;
+    max-width: 800px;
+}
+
+.question__item.active+.question__item-request {
+    display: block;
+}
+
+.question__item-arrow {
+    transition: all ease 0.5s;
+}
+
+.question__item.active .question__item-arrow {
+    transform: rotate(90deg);
+    transition: all ease 0.5s;
+}
+
+.question__item-block:nth-child(1) {
+    margin: 0 0 15px 0;
+}
+
+.question__item-block:nth-child(2) {
+    margin: 0 0 15px 50px;
+}
+
+.question__item-block:nth-child(3) {
+    margin: 0 0 15px 100px;
+}
+
+.question__item-block:nth-child(4) {
+    margin: 0 0 15px 150px;
+}
+
+.question__item-txt {
+    font-size: 32px;
+    color: black;
+    margin: 0 0 0 50px;
+}
+
+/* Footer ------------------------------------------------------------*/
+
+.footer {
+    background: white;
+    height: 467px;
+    width: 100%;
+    position: relative;
+}
+
+.footer__block {
+    display: flex;
+    padding: 50px 0 0 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer__info-block {
+    display: flex;
+}
+
+.footer__logo {
+    width: 148px;
+    height: 182px;
+}
+
+.footer__info {
+    margin: 0 0 0 185px;
+}
+
+@media (max-width: 1309px) {
+    .footer__info {
+        margin: 0 0 0 100px;
+    }
+}
+
+
+
+.footer__info-txt {
+    color: #1A1A1A;
+    font-size: 24px;
+    font-weight: medium;
+    margin: 0 0 50px 0;
+}
+
+.footer__info-item {
+    color: #1E1E1E;
+    font-size: 18px;
+}
+
+.footer__info-item:not(:last-child) {
+    margin: 0 0 20px 0;
+}
+
+.footer__info-link {
+    display: block;
+}
+
+.footer__info-link:not(:last-child) {
+    margin: 0 0 20px 0;
+}
+
+.footer-social-links-item:not(:last-child) {
+    margin: 0 40px 0 0;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    height: 50px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.copyright__line {
+    background: #CCCCCC;
+    width: 100%;
+    height: 2px;
+}
+
+.copyright__texts {
+    padding: 0 120px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: #848484;
+}
+
+@media (max-width: 1160px) {
+    .footer__logo {
+        display: none;
+    }
+
+    .footer__block {
+        flex-flow: column;
+        padding: 50px 120px 0 120px;
+    }
+
+    .footer__info:nth-child(2) {
+        margin: 0;
+    }
+
+    #footer__info-block {
+        order: 2;
+    }
+
+    #footer__social-links {
+        order: 1;
+    }
+
+    .footer__social-links {
+        margin: 0 0 50px 0;
+    }
+}
+
+@media (max-width: 1160px) {
+    .footer__info-links {
+        display: none;
+    }
+
+    .footer__info {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {}
