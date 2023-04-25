@@ -246,6 +246,7 @@ body {
 
 .question__item-arrow {
     transition: all ease 0.5s;
+    box-sizing: border-box;
 }
 
 .question__item.active .question__item-arrow {
@@ -531,6 +532,11 @@ body {
 
     .question__item {
         padding: 0 25px;
+    }
+
+    .question__item-arrow {
+        width: 13px;
+        height: 22px;
     }
 
     .footer__block {
