@@ -429,10 +429,7 @@ body {
     }
 
     .question__img {
-        right: -200px;
-        top: 50px;
-        width: 360px;
-        height: 359px;
+        display: none;
     }
 
     .question__item {
@@ -534,6 +531,8 @@ body {
 
     .question__item {
         padding: 0 25px;
+        background: white;
+        border-radius: 30px;
     }
 
     .question__item-arrow {
@@ -555,6 +554,6 @@ body {
     }
 
     .contacts {
-        background: linear-gradient(180deg, #FFFFFF 66.6%, rgba(255, 255, 255, 0) 99.59%);
+        background: white;
     }
 }
