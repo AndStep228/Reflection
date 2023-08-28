@@ -540,6 +540,11 @@ body {
         border-radius: 30px;
     }
 
+    .question__item-request {
+        background: white;
+        border-radius: 30px;
+    }
+
     .question__item-arrow {
         width: 13px;
         height: 22px;
